@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage[pdftex,
+        pdfauthor={[:author:]},
+        pdftitle={[:title:]}]{hyperref}
+\date{}
+\author{}
+\begin{document}
+The following papers cite ``[:title:]'' by [:authors:] published in [:venue:] [:year:]:
+\renewcommand{\section}[2]{}%
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{[:bibpfx:]}
+\end{document}
