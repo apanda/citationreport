@@ -72,5 +72,7 @@ def main(author_id, author_name):
 if __name__=="__main__":
     if len(sys.argv) < 3:
         print("Usage: %s authorID authorName"%sys.argv[0], file=sys.stderr)
+        print("   authorId is the semantic scholar ID", file=sys.stderr)
+        print("   authorName is a name to filter by", file=sys.stderr)
         sys.exit(1)
     main(sys.argv[1], sys.argv[2])
